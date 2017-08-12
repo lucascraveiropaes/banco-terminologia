@@ -368,6 +368,9 @@ a:focus {
 a:focus {
   outline: none;
 }
+.img-responsive {
+  margin: auto;
+}
 .img-rounded {
   border-radius: 6px;
 }
@@ -384,10 +387,11 @@ a:focus {
   height: auto;
 }
 .img-comment {
-  font-size: 15px;
+  font-size: 16px !important;
   line-height: 1.2;
   font-style: italic;
-  margin: 24px 0;
+  margin: 10px 0px 20px 0 !important;
+  text-align: center !important;
 }
 h1,
 h2,
@@ -576,15 +580,23 @@ abbr[data-original-title] {
   border-bottom: 1px dotted #bdc3c7;
 }
 blockquote {
-  border-left: 3px solid #e7e9ec;
+  border-left: 3px solid #293A4A;
   padding: 0 0 0 16px;
-  margin: 0 0 30px;
+  margin: 15px 0px 10px 15px;
 }
 blockquote p {
-  font-size: 20px;
+  font-size: 18px !important;
+  font-style: italic;
+  font-weight: 100;
+  color: #808387;
+
   line-height: 1.55;
-  font-weight: normal;
   margin-bottom: .4em;
+}
+blockquote small {
+  color: #979ba0;
+  font-size: 15px !important;
+
 }
 blockquote small,
 blockquote .small {
@@ -4067,6 +4079,8 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin-bottom: 30px;
   border: none;
   border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 @media (min-width: 768px) {
   .navbar-header {
