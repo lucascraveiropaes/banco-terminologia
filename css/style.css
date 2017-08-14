@@ -41,3 +41,11 @@ footer .footer-banner ul li a {
 footer .footer-banner ul li a:hover {
 	text-decoration: underline;
 }
+
+/* Media Query */
+
+@media(max-width: 420px) {
+	.term-content {
+	    padding: 10px 0px !important;
+	}
+}
