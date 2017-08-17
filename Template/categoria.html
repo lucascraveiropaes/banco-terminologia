@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Banco de Terminologia</title>
+        <title>Categoria - Banco de Terminologia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="css/bootstrap.css" rel="stylesheet">
@@ -10,7 +10,7 @@
         <link href="css/flat-ui.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
-        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="shortcut icon" href="img/favicon.png">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -25,7 +25,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-8">
                     <span class="sr-only">Toggle navigation</span>
                 </button>
-                <a class="navbar-brand" href="#">Logo</a>
+                <a class="navbar-brand" href="#">
+                    <img src="#"" class="img-responsive" alt="Logo">
+                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="navbar-collapse-8">
@@ -37,20 +39,20 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">Sobre Nós</a>
+                        <a href="sobre.html">Sobre Nós</a>
                     </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             Categorias <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Português</a></li>
-                            <li><a href="#">Matemática</a></li>
-                            <li><a href="#">Física</a></li>
-                            <li><a href="#">Geografia</a></li>
-                            <li><a href="#">História</a></li>
-                            <li><a href="#">Programação</a></li>
-                            <li><a href="#">Biologia</a></li>
+                            <li><a href="categoria.html">Português</a></li>
+                            <li><a href="categoria.html">Matemática</a></li>
+                            <li><a href="categoria.html">Física</a></li>
+                            <li><a href="categoria.html">Geografia</a></li>
+                            <li><a href="categoria.html">História</a></li>
+                            <li><a href="categoria.html">Programação</a></li>
+                            <li><a href="categoria.html">Biologia</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -71,7 +73,8 @@
             <div class="col-lg-9">
                 <div class="row demo-tiles">
                     <div class="col-xs-12 title-header">
-                        <h5>Esses são alguns dos termos adicionados recentemente</h5>
+                        <h5>Nome da Categoria</h5>
+                        <hr>
                     </div>
                     <div class="col-md-4 col-xs-12">
                         <div class="tile">
@@ -146,23 +149,47 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4"> 
+            <div class="col-lg-3 col-md-12"> 
                 <div class="row demo-samples">
-                    <div class="col-xs-12 title-header">
-                        <h6>Deseja sugerir algum termo?</h6>
+                    <div class="col-lg-12 col-md-6 col-xs-12">
+                        <div class="tile email-widget">
+                            <p>Quer saber quando for adicionado um novo termo? Deixe seu email abaixo que nós te avisaremos</p>
+                            <form action="#" role="search">
+                                <div class="form-group">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="termo" placeholder="Digite seu e-mail">
+                                    </div>
+                                    <button type="submit" class="btn btn-block btn-lg btn-primary">
+                                        Receber Atualizações &nbsp;
+                                        <i class="fa fa-envelope"></i>
+                                    </button>
+                                </div>
+                            </form>  
+                        </div>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-lg-12 col-md-6 col-xs-12">
+                        <hr>
+                        <h6 class="title-header">Deseja sugerir algum termo?</h6>
                         <div class="todo">
                             <div class="todo-search">
                                 <input class="todo-search-field" type="search" name="s" placeholder="Pesquise primeiro" />
                             </div>
-                            <ul>
+                            <ul class="todo-list">
                                 <li>
                                     <div class="todo-icon fui-user"></div>
                                     <div class="todo-content">
                                         Satu do Salgueiro sugeriu:
                                         <h4 class="todo-name">
                                             Filantropia <i><small>em Português</small></i>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="todo-icon fui-user"></div>
+                                    <div class="todo-content">
+                                        Jhonny Braga sugeriu:
+                                        <h4 class="todo-name">
+                                            Motor <i><small>em Física</small></i>
                                         </h4>
                                     </div>
                                 </li>
@@ -193,6 +220,8 @@
                                         </h4>
                                     </div>
                                 </li>
+                            </ul>
+                            <ul>
                                 <li>
                                     <form action="#" role="search">
                                         <div class="form-group">
@@ -202,16 +231,15 @@
 								          			<label for="s2id_autogen2" class="select2-offscreen"></label>
 								      				<input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2">
 								  				</div>
-								  					<select data-toggle="select" class="form-control select select-default select2-offscreen" tabindex="-1" title="">
-										                <option>Programação</option>
-										                <option>Português</option>
-										                <option>Matemática</option>
-										                <option>Geografia</option>
-										                <option>História</option>
-										                <option>Física</option>
-										                <option>Biologia</option>
-									              	</select>
-								            	</div>
+							  					<select data-toggle="select" class="form-control select select-default select2-offscreen" tabindex="-1" title="">
+									                <option>Programação</option>
+									                <option>Português</option>
+									                <option>Matemática</option>
+									                <option>Geografia</option>
+									                <option>História</option>
+									                <option>Física</option>
+									                <option>Biologia</option>
+								              	</select>
 							            	</div>
                                             <button type="submit" class="btn btn-block btn-lg btn-primary">
                                                 Enviar &nbsp;
